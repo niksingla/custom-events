@@ -1,0 +1,52 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ .form-group{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+.form-group > *{
+    margin:0;
+    padding:0.45rem 0px;
+}
+.form-group textarea{   
+    margin-bottom:10px;
+    min-height:100px;
+}
+
+.form-group p{
+    border-top:0.5px solid black;
+}
+.form-group label{
+    font-weight:bold;
+}
+
+.event-widget a{
+    color:inherit!important;
+    text-decoration: none!important;
+}
+.event-widget >div{
+    border: 2px solid;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+.event-widget-item {
+    display: flex;
+}
+.event-widget-item img[src='']{
+    display: none;
+}
+.event-widget-item img{
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
+}
+.event-widget >div:not(.event-widget > :nth-child(1)){
+    border-top: unset;
+}
+.event-widget-item p{
+    font-size: 14px;
+    margin-bottom:1px;
+}
